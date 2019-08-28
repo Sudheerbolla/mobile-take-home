@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardCharacter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/colorVeryLightGrey"
+    app:cardCornerRadius="@dimen/five_dp"
+    app:cardElevation="@dimen/two_dp"
+    app:cardMaxElevation="@dimen/two_dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/relBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:id="@+id/relImage"
+                android:layout_marginStart="@dimen/ten_dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/eighty_dp"
+                android:layout_height="@dimen/eighty_dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtStatus"
+                    android:rotation="315"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/twenty_dp"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="@dimen/fifteen_sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_toEndOf="@id/relImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/ten_dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCharacterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fourteen_sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCreated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/eleven_sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtSpecies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fourteen_sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fourteen_sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtOrigin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fourteen_sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtLastLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fourteen_sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
