@@ -171,8 +171,7 @@ public class EpisodesFragment extends BaseFragment implements IParserListener, I
 
     private void setEpisodesAdapter() {
         linearLayoutManager = new LinearLayoutManager(mainActivity);
-        if (recyclerView.getLayoutManager() == null)
-            recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setLayoutManager(linearLayoutManager);
         if (recyclerView.getAdapter() == null) {
             episodesAdapter = new EpisodesAdapter(mainActivity, episodeModelArrayList, this);
             recyclerView.setAdapter(episodesAdapter);
